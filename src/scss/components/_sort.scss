@@ -5,9 +5,13 @@
   &__label {
     display: flex;
     align-items: center;
-
-    svg {
+    &__icon {
       margin-right: 8px;
+      transition: 0.4s;
+      transform: rotate(180deg);
+      &--rotate {
+        transform: rotate(0);
+      }
     }
 
     b {
